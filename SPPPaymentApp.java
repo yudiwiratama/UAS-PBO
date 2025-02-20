@@ -26,10 +26,10 @@ public class SPPPaymentApp {
 
     private void connectToDatabase() {
         try {
-            // Ganti dengan detail database Anda
+            // Ganti dengan detail database 
             String url = "jdbc:mysql://172.17.0.2:3306/spp_payment";
-            String username = "root"; // Ganti dengan username MySQL Anda
-            String password = "P@ssw0rd"; // Ganti dengan password MySQL Anda
+            String username = "root"; // Ganti dengan username MySQL 
+            String password = "P@ssw0rd"; // Ganti dengan password MySQL 
 
             connection = DriverManager.getConnection(url, username, password);
             System.out.println("Terhubung ke database!");
@@ -217,7 +217,7 @@ private void updateData() {
         JOptionPane.showMessageDialog(frame, "Data berhasil diubah!");
     } catch (SQLException e) {
         JOptionPane.showMessageDialog(frame, "Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        e.printStackTrace(); // Print stack trace for more detailed error information
+        e.printStackTrace(); // Detail error
     }
 }
 
