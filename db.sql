@@ -10,6 +10,3 @@ CREATE TABLE pembayaran (
     metode_pembayaran VARCHAR(50) NOT NULL,
     jumlah DECIMAL(10, 2) NOT NULL
 );
-
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1223';
-flush privileges;
