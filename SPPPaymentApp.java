@@ -27,9 +27,9 @@ public class SPPPaymentApp {
     private void connectToDatabase() {
         try {
             // Ganti dengan detail database Anda
-            String url = "jdbc:mysql://10.10.10.10:3306/spp_payment";
+            String url = "jdbc:mysql://172.17.0.2:3306/spp_payment";
             String username = "root"; // Ganti dengan username MySQL Anda
-            String password = "1223"; // Ganti dengan password MySQL Anda
+            String password = "P@ssw0rd"; // Ganti dengan password MySQL Anda
 
             connection = DriverManager.getConnection(url, username, password);
             System.out.println("Terhubung ke database!");
@@ -50,7 +50,7 @@ public class SPPPaymentApp {
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
         // Header
-        JLabel titleLabel = new JLabel("Sistem Pembayaran SPP SMP Jakenan", JLabel.CENTER);
+        JLabel titleLabel = new JLabel("Sistem Pembayaran SPP SMKN 12 Bandung", JLabel.CENTER);
         titleLabel.setFont(new java.awt.Font("Arial", java.awt.Font.BOLD, 16));
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -67,7 +67,7 @@ public class SPPPaymentApp {
         gbc.gridx = 2;
         frame.add(new JLabel("Jurusan :"), gbc);
         gbc.gridx = 3;
-        majorBox = new JComboBox<>(new String[]{"Pilih", "IPA", "IPS"});
+        majorBox = new JComboBox<>(new String[]{"Pilih", "TKJ", "RPL", "Elektro"});
         frame.add(majorBox, gbc);
 
         gbc.gridx = 0;
@@ -264,7 +264,7 @@ private void updateData() {
             document.open();
 
             // Judul Laporan
-            document.add(new Paragraph("Laporan Pembayaran SPP SMP Jakenan\n\n"));
+            document.add(new Paragraph("Laporan Pembayaran SPP SMKN 1 Bandung\n\n"));
 
             // Tabel PDF
             PdfPTable pdfTable = new PdfPTable(model.getColumnCount());
