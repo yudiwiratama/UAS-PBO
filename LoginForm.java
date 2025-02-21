@@ -58,7 +58,7 @@ public class LoginForm extends JFrame implements ActionListener {
     private void connectToDatabase() {
         try {
             // Ganti dengan detail database 
-            String url = "jdbc:mysql://172.17.0.2:3306/spp_payment";
+            String url = "jdbc:mysql://172.17.0.2:3306/ProjectSiswa";
             String username = "root"; // Ganti dengan username MySQL 
             String password = "P@ssw0rd"; // Ganti dengan password MySQL 
 
