@@ -1,6 +1,6 @@
 -- buat database
-CREATE DATABASE spp_payment;
-USE spp_payment;
+CREATE DATABASE ProjectSiswa;
+USE ProjectSiswa;
 
 -- buat table untuk data autentikasi login
 CREATE TABLE admin (
